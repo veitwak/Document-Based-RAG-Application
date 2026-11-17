@@ -1,0 +1,120 @@
+digraph G {
+concentrate=true;
+splines="ortho";
+rankdir="LR";
+subgraph legend{
+    rank = min;
+    label = "legend";
+    Legend [shape=none, margin=0, label = <
+        <table cellspacing="0" cellpadding="0" border="1"><tr><td>Code2flow Legend</td></tr><tr><td>
+        <table cellspacing="0">
+        <tr><td>Regular function</td><td width="50px" bgcolor='#cccccc'></td></tr>
+        <tr><td>Trunk function (nothing calls this)</td><td bgcolor='#966F33'></td></tr>
+        <tr><td>Leaf function (this calls nothing else)</td><td bgcolor='#6db33f'></td></tr>
+        <tr><td>Function call</td><td><font color='black'>&#8594;</font></td></tr>
+        </table></td></tr></table>
+        >];
+}node_63e90d32 [label="6: __init__()" name="EmbeddingClient::EmbeddingClient.__init__" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_a2637d86 [label="21: embed_query()" name="EmbeddingClient::EmbeddingClient.embed_query" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_6f0414e7 [label="15: embed_texts()" name="EmbeddingClient::EmbeddingClient.embed_texts" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_9f3c0a06 [label="4: ask_hr_assistant()" name="ask_hr_assistant::ask_hr_assistant" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_7b876218 [label="4: extract_pages_from_file()" name="extract_pages_from_file::extract_pages_from_file" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_66bd54e7 [label="4: get_db_connection()" name="get_db_connection::get_db_connection" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_25def2bd [label="3: init_database()" name="init_database::init_database" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_4199a7ba [label="0: (global)()" name="main::(global)" shape="rect" style="rounded,filled" fillcolor="#966F33" ];
+node_ac3813a8 [label="27: main()" name="main::main" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_fb795995 [label="7: process_document()" name="process_document::process_document" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_8756de1e [label="3: recursive_chunk_text()" name="recursive_chunk_text::recursive_chunk_text" shape="rect" style="rounded,filled" fillcolor="#cccccc" ];
+node_cabcb5ee [label="3: retrieve_top_k()" name="retrieve_top_k::retrieve_top_k" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_0be1e705 [label="4: save_chunks_to_db()" name="save_chunks_to_db::save_chunks_to_db" shape="rect" style="rounded,filled" fillcolor="#6db33f" ];
+node_a2637d86 -> node_6f0414e7 [color="#D55E00" penwidth="2"];
+node_9f3c0a06 -> node_a2637d86 [color="#D55E00" penwidth="2"];
+node_9f3c0a06 -> node_cabcb5ee [color="#D55E00" penwidth="2"];
+node_4199a7ba -> node_ac3813a8 [color="#56B4E9" penwidth="2"];
+node_ac3813a8 -> node_63e90d32 [color="#000000" penwidth="2"];
+node_ac3813a8 -> node_6f0414e7 [color="#000000" penwidth="2"];
+node_ac3813a8 -> node_9f3c0a06 [color="#000000" penwidth="2"];
+node_ac3813a8 -> node_66bd54e7 [color="#000000" penwidth="2"];
+node_ac3813a8 -> node_25def2bd [color="#000000" penwidth="2"];
+node_ac3813a8 -> node_fb795995 [color="#000000" penwidth="2"];
+node_ac3813a8 -> node_0be1e705 [color="#000000" penwidth="2"];
+node_fb795995 -> node_7b876218 [color="#0072B2" penwidth="2"];
+node_fb795995 -> node_8756de1e [color="#0072B2" penwidth="2"];
+node_8756de1e -> node_8756de1e [color="#D55E00" penwidth="2"];
+subgraph cluster_148e2e7b {
+    label="File: EmbeddingClient";
+    name="EmbeddingClient";
+    style="filled";
+    graph[style=dotted];
+    subgraph cluster_d955a985 {
+        node_63e90d32 node_6f0414e7 node_a2637d86;
+        label="Class: EmbeddingClient";
+        name="EmbeddingClient";
+        style="filled";
+        graph[style=dotted];
+    };
+};
+subgraph cluster_b1c5ba33 {
+    node_9f3c0a06;
+    label="File: ask_hr_assistant";
+    name="ask_hr_assistant";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_95420abd {
+    node_7b876218;
+    label="File: extract_pages_from_file";
+    name="extract_pages_from_file";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_100fde7d {
+    node_66bd54e7;
+    label="File: get_db_connection";
+    name="get_db_connection";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_38cfa1c1 {
+    node_25def2bd;
+    label="File: init_database";
+    name="init_database";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_2b531ea2 {
+    node_ac3813a8 node_4199a7ba;
+    label="File: main";
+    name="main";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_2cba6c29 {
+    node_fb795995;
+    label="File: process_document";
+    name="process_document";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_ce569121 {
+    node_8756de1e;
+    label="File: recursive_chunk_text";
+    name="recursive_chunk_text";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_6412be9c {
+    node_cabcb5ee;
+    label="File: retrieve_top_k";
+    name="retrieve_top_k";
+    style="filled";
+    graph[style=dotted];
+};
+subgraph cluster_1cae0d3d {
+    node_0be1e705;
+    label="File: save_chunks_to_db";
+    name="save_chunks_to_db";
+    style="filled";
+    graph[style=dotted];
+};
+}

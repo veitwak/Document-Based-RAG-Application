@@ -1,0 +1,126 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage[ngerman]{babel}
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+    {\Huge \textbf{Tim Christoph Raunegger-Müller}} \\[8pt]
+    Fünfkirchnerstr. 61, 73460 Hüttlingen, Germany \quad | \quad +49 15510 738415 \\
+    \href{mailto:tim.raunegger.mueller@gmail.com}{tim.raunegger.mueller@gmail.com} \quad | \quad \href{https://de.linkedin.com/in/tim-raunegger-mueller}{linkedin.com/in/tim-raunegger-mueller} \\
+    \href{https://orcid.org/0009-0005-9279-0146}{orcid.org/0009-0005-9279-0146} \quad | \quad \href{https://github.com/veitwak}{github.com/veitwak}
+\end{center}
+
+\vspace{10pt}
+
+\section{Ausbildung}
+\textbf{Hochschule Aalen} \hfill Aalen, Deutschland \\
+\textbf{Master of Science} \hfill Sept. 2024 -- Mai 2026\\
+\textbf{Studiengang:} Machine Learning and Data Analytics\quad \textbf{(Absolventenredner)}\\
+\textbf{Gesamtnote:} 1,3 / GPA: 3.7\\
+\textbf{Thesisnote:} 1,0 / GPA: 4.0\\
+\textbf{Masterarbeit:}
+\begin{itemize}[noitemsep, topsep=2pt]
+    \item \textbf{Thema:} Early Fire Detection Using Attention Mechanisms
+    \item \textbf{Beschreibung:} Entwicklung und Evaluation eines Attention-basierten Deep-Learning-Modells und zugehöriger Kostenfunktion zur frühzeitigen Branderkennung auf Basis von Sensordaten.
+    \item \textbf{Gastuniversität:} German Jordanian University (GJU) \hfill Amman, Jordanien
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Hochschule Aalen} \hfill Aalen, Deutschland \\
+\textbf{Bachelor of Engineering} \hfill Sept. 2020 -- Aug. 2024\\
+\textbf{Studiengang:} Internet of Things\quad \textbf{(Jahrgangsbester)}\\
+\textbf{Gesamtnote:} 1,5 / GPA: 3.5\\
+\textbf{Thesisnote:} 1,0 / GPA: 4.0\\
+\textbf{Bachelorarbeit:}
+\begin{itemize}[noitemsep, topsep=2pt]
+    \item \textbf{Thema:} Anomaly detection / Data analytics for predictive maintenance
+    \item \textbf{Beschreibung:} Entwicklung und Implementierung eines Machine-Learning-Modells in Matlab zur Vorhersage von Anomalien und Fehlern bei Kühlgeräten, unter Verwendung von Daten der gesamten Produktionslinie.
+    \item \textbf{Industriepartner:} BSH Hausgeräte Gruppe \hfill Giengen an der Brenz, Deutschland
+\end{itemize}
+
+\section{Berufserfahrung}
+\textbf{NetCom BW GmbH} \hfill Ellwangen, Deutschland \\
+\textit{Network Engineer (Werkstudent)} \hfill Nov. 2024 -- Okt. 2025
+\begin{itemize}[noitemsep, topsep=2pt]
+    \item Installation und Konfiguration von Netzwerkgeräten, einschließlich eines Layer-1-Switches, indem die mitgelieferte Konfigurationssoftware durch eine selbst entwickelte Software ersetzt wurde.
+    \item Pflege und Aktualisierung des Inventars aller Netzwerkgeräte und deren Konfigurationen.
+\end{itemize}
+\vspace{8pt}
+
+\textbf{BSH Hausgeräte Gruppe} \hfill Giengen an der Brenz, Deutschland \\
+\textit{Data Analyst (Werkstudent)} \hfill Okt. 2022 -- Mai 2024
+\begin{itemize}[noitemsep, topsep=2pt]
+    \item Entwicklung und Implementierung eines Machine-Learning-Modells zur Vorhersage von Anomalien und Fehlern bei Hausgeräten, unter Verwendung von Daten der gesamten Produktionslinie.
+    \item Entwicklung und Implementierung eines schwellenwertbasierten Warnsystems entlang der gesamten Produktionslinie.
+    \item Erstellung mehrerer Data-Analytics-Dashboards zur Visualisierung von Produktionsdaten und Bereitstellung handlungsorientierter Erkenntnisse für das Management.
+    \item Wartung der Data-Analytics-Infrastruktur, einschließlich Datenpipelines und Speicherlösungen.
+\end{itemize}
+
+\section{Projekte}
+\textbf{Eigenes Homelab \& KI-Infrastruktur} \hfill Nov. 2024 -- jetzt \\
+\textit{Administration \& Orchestrierung eines Ubuntu-Servers}
+\begin{itemize}[noitemsep, topsep=2pt]
+    \item Betrieb und Wartung eines eigenen Linux-Servers mittels Docker zur containerbasierten Microservice-Orchestrierung.
+    \item Bereitstellung lokaler LLM- \& GenAI-Pipelines (u.\,a. Ollama, Open-WebUI, ComfyUI) inklusive Vektor-Datenbanken (PgVector) für RAG-Anwendungen.
+    \item Konfiguration der Netzwerk- \& Sicherheitsarchitektur über Reverse Proxies (Nginx Proxy Manager, Caddy), SSL-Zertifikate und DNS-Filtering (Pi-hole).
+    \item Administration relationaler und NoSQL-Datenbanken (PostgreSQL, MariaDB, Redis) sowie Self-Hosted Cloud-Infrastruktur.
+\end{itemize}
+\vspace{8pt}
+
+\section{Publikationen}
+\begin{itemize}[noitemsep, topsep=2pt, leftmargin=*]
+    \item \textbf{Raunegger-Müller, T. C.}, Khalifeh, A., \& Ludwig, S. (2025). \textit{An Attention-based Architecture for Early Fire Detection}. 2025 Asian Conference on Communication and Networks (ASIANComNet), S. 1--6. DOI: 10.1109/ASIANComNet68615.2025.11579567
+    \item \textbf{Raunegger-Müller, T. C.}, Khalifeh, A., \& Ludwig, S. \textit{An Attention-based Architecture for Early Fire Detection (Extended Version)}. Ziel-Journal: Engineering Applications of Artificial Intelligence. (Im Review).
+\end{itemize}
+
+\section{Kenntnisse \& Fähigkeiten}
+
+\begin{itemize}[noitemsep, topsep=2pt, leftmargin=*]
+
+    \item \textbf{AI \& Machine Learning:} Python, PyTorch, Scikit-learn, Machine Learning, Deep Learning, Anomalieerkennung, Predictive Maintenance
+
+    \item \textbf{Data \& Analytics:} NumPy, Pandas, SQL, Data Analytics, Matlab, Tableau, Matplotlib
+
+    \item \textbf{Software \& Engineering:} C++, objektorientierte Programmierung, Git, Full-Stack IoT Engineering
+
+    \item \textbf{Cloud \& Development:} Microsoft Azure, Scrum, \LaTeX
+
+    \item \textbf{Domain:} IoT, Datenpipelines
+
+    \item \textbf{Soft Skills:} Analytische Problemlösung, Interkulturelle Kommunikation, Team-Mentoring, Abteilungsübergreifende Zusammenarbeit
+
+    \item \textbf{Sprachen:} Deutsch (Muttersprache), Englisch (Fließend), Französisch (Grundkenntnisse), Mandarin (Grundkenntnisse)
+
+\end{itemize}
+
+
+\vspace{20pt}
+Hüttlingen, \today
+
+\begin{figure}[h]
+    \includegraphics[height=3cm]{signature.png}
+\end{figure}
+
+Tim Christoph Raunegger-Müller
+
+\end{document}

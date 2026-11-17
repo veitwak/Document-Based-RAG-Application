@@ -1,0 +1,7 @@
+sudo apt update
+
+sudo apt install graphviz
+
+pip install code2flow
+
+code2flow main.py Funktionen/ Klassen/ -o flow_diagramm.png
